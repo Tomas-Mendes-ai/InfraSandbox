@@ -45,19 +45,7 @@ More details in the documentation folder.
 10. Email server
 11. Update Server
 12. CRL and OCSP
-13. ,,,
-
-### Host-side
-
-This sandbox is fully virtualized on a single linux host using Docker containers when possible and hardware-level virtulization with KVM/QEMU when needed.  
-Scripts will deploy VMs using libvert and containers using docker-compose (and _maybe_ Docker Swarm).  
-Openvswitch will deploy vlan aware bridges for L2 connectivity configured through Faucet.  
-
-### Opnsense
-
-Solution picked for the three gateways. Will live inside VMs as it needs the FreeBSD kernel.    
-They'll handle all routing needs including between VLANs.   
-They'll be one of the policy enforcement points of traffic traversing networks and vlans.  
+13. ...
 
 ## To Do
 
