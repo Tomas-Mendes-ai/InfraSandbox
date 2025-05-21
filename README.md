@@ -40,7 +40,7 @@ More details in the documentation folder.
 5. Ansible
 6. Hashicorp Vault
 7. CRM system
-8. OPNsense
+8. DIY Firewalls with Debian
 9. Unbound DNS
 10. Email server
 11. Update Server
@@ -49,5 +49,24 @@ More details in the documentation folder.
 
 ## To Do
 
-1. Write the the To Do section of the readme
-2. TBD
+### Phase 1 - Minimum Connectivity
+
+1. Namespace for the sandbox with systemd-nspawn 
+
+2. Set up Switching
+    1. Faucet configs for VLANs
+    2. Faucet configs for switches
+    3. Script for switch creation with ovs
+    4. Script for Veth pairs
+
+3. Ansible 
+    1. Playbooks for the Firewalls
+    2. Docker compose for ansible container
+    3. Script to docker exec the playbooks
+
+4. Firewall VMs
+    1. Libvirt .xmls to configure the VMs
+    2. Script to create the VMs
+    3. Debian preseeds to automate the instalation
+
+### Phase 2
